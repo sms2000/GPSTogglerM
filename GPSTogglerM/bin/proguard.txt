@@ -1,0 +1,49 @@
+# view AndroidManifest.xml #generated:61
+-keep class com.ogp.gpstogglerm.ActivityManagement { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.ogp.gpstogglerm.GPSTogglerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.ogp.gpstogglerm.GPSTogglerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.ogp.gpstogglerm.GPSWidget { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.ogp.gpstogglerm.OffActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.ogp.gpstogglerm.OnActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.ogp.gpstogglerm.SelectActivity { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:132
+# onClick res/layout/activity_main.xml #generated:20
+-keepclassmembers class * { *** clickButton(...); }
+
+# onClick res/layout/activity_main.xml #generated:100
+-keepclassmembers class * { *** clickDebugging(...); }
+
+# onClick res/layout/activity_main.xml #generated:85
+-keepclassmembers class * { *** clickNotification(...); }
+
+# onClick res/layout/activity_select.xml #generated:29
+-keepclassmembers class * { *** clickOK(...); }
+
+# onClick res/layout/activity_main.xml #generated:49
+-keepclassmembers class * { *** clickSelectPackets(...); }
+
+# onClick res/layout/activity_main.xml #generated:115
+-keepclassmembers class * { *** clickSplitAware(...); }
+
+# onClick res/layout/activity_main.xml #generated:70
+-keepclassmembers class * { *** clickTurnBT(...); }
+
+# onClick res/layout/activity_main.xml #generated:144
+-keepclassmembers class * { *** clickUninstall(...); }
+
+# onClick res/layout/activity_main.xml #generated:39
+-keepclassmembers class * { *** clickWatchWaze(...); }
+

@@ -1,0 +1,158 @@
+<ScrollView 	xmlns:android="http://schemas.android.com/apk/res/android"
+    		  	xmlns:tools="http://schemas.android.com/tools"
+    		  	android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:minWidth="10000dp"
+    			tools:context=".GPSTogglerActivity" 
+    			android:orientation="vertical"
+    			android:fadeScrollbars="false"
+    			android:scrollbarFadeDuration="0" 
+    			android:scrollbars="vertical" >
+
+	<LinearLayout 	android:layout_width="match_parent"
+	    			android:layout_height="wrap_content"
+	    			android:layout_marginLeft="10dp"
+	    			android:layout_marginRight="10dp"
+	    			tools:context=".GPSTogglerActivity" 
+	    			android:orientation="vertical" >
+	    
+	    
+	    <TextView
+	        android:id="@+id/description"
+	        android:onClick="clickButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/description" />
+	    
+	    <TextView
+	        android:id="@+id/version"
+	        android:layout_marginTop="5dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="" />
+	    
+	    <RelativeLayout	android:layout_width="match_parent"
+	    				android:layout_height="wrap_content"
+	    				android:layout_marginEnd="10dp"
+	    				android:orientation="horizontal">
+
+		    <CheckBox
+		        android:id="@+id/waze"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:layout_alignParentStart="true"
+		        android:onClick="clickWatchWaze"
+		        android:layout_toStartOf="@+id/selectPackets"
+		        android:text="@+string/watch_waze" />
+	        
+		    <Button
+		        android:id="@+id/selectPackets"
+		        android:layout_marginTop="20dp"
+    			android:minWidth="100dp"
+		        android:onClick="clickSelectPackets"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentEnd="true"
+		        android:text="@+string/select_packets" />
+		    		    
+		    
+	    </RelativeLayout>
+	    
+	    
+	    <TextView
+	        android:id="@+id/btText"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/bt_text" />
+	    
+	    <CheckBox
+	        android:id="@+id/bt"
+	        android:layout_marginTop="10dp"
+	        android:onClick="clickTurnBT"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/switch_bt" />
+	    
+	    <TextView
+	        android:id="@+id/notificationText"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/notification_text" />
+	    
+	    <CheckBox
+	        android:id="@+id/notification"
+	        android:layout_marginTop="10dp"
+	        android:onClick="clickNotification"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/use_notification" />
+	    
+	    <TextView
+	        android:id="@+id/debuggingText"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/debugging_text" />
+	    
+	    <CheckBox
+	        android:id="@+id/debugging"
+	        android:layout_marginTop="10dp"
+	        android:onClick="clickDebugging"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/use_debugging" />
+	    
+	    <TextView
+	        android:id="@+id/splitAwareText"
+	        android:layout_marginTop="10dp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/splitaware_text" />
+	    
+	    <CheckBox
+	        android:id="@+id/splitAware"
+	        android:layout_marginTop="10dp"
+	        android:onClick="clickSplitAware"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@+string/split_aware" />
+	    
+	    <LinearLayout
+        	android:id="@+id/buttons"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="24dp" 
+        	android:weightSum="1.0" 
+        	style="?android:attr/buttonBarStyle" >
+	    
+	    
+		    <Button
+		        android:id="@+id/button"
+		        android:layout_marginTop="10dp"
+		        android:onClick="clickButton"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight=".5"
+		        android:lines="3"
+		        android:minHeight="40dp"
+		        android:text="@+string/status_unknwon"
+		        style="?android:attr/buttonBarButtonStyle" />
+	    
+		    <Button
+		        android:id="@+id/uninstall"
+		        android:layout_marginTop="10dp"
+		        android:onClick="clickUninstall"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight=".5"
+		        android:lines="3"
+		        android:minHeight="40dp"
+		        android:text="@+string/uninstall"
+		        style="?android:attr/buttonBarButtonStyle" />
+		    
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
