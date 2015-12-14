@@ -221,7 +221,7 @@ public class GPSTogglerService extends Service implements GPSCallbackInterface
 			Notification.Builder noteBuilder = new Notification.Builder(this)
 													 .setContentTitle(getResources().getString (R.string.app_name))
 													 .setContentText(getResources().getString (R.string.notify_active))
-													 .setSmallIcon(getResIdByStatus())
+													 .setSmallIcon(R.drawable.gps_s_any)
 													 .setContentIntent(pi);
 
 			
@@ -249,26 +249,6 @@ public class GPSTogglerService extends Service implements GPSCallbackInterface
 		}
 	}
 
-	
-	private int getResIdByStatus() 
-	{
-		if (null == gpsActuator || !gpsActuator.isReady())
-		{
-			return R.drawable.gps_s_unknown;
-		}
-		else
-		{
-			if (StateMachine.getWatchGPSSoftware())
-			{
-				return gpsActuator.isGPSOn() ? R.drawable.gps_s_control_on : R.drawable.gps_s_control_off;
-			}
-			else
-			{
-				return gpsActuator.isGPSOn() ? R.drawable.gps_s_on : R.drawable.gps_s_off;
-			}
-		}
-	}
-	
 	
 	private int getColorIdByStatus() 
 	{

@@ -26,13 +26,9 @@ public final class R {
         public static final int gps_control_on=0x7f020002;
         public static final int gps_off=0x7f020003;
         public static final int gps_on=0x7f020004;
-        public static final int gps_s_control_off=0x7f020005;
-        public static final int gps_s_control_on=0x7f020006;
-        public static final int gps_s_off=0x7f020007;
-        public static final int gps_s_on=0x7f020008;
-        public static final int gps_s_unknown=0x7f020009;
-        public static final int gps_unknown=0x7f02000a;
-        public static final int ic_launcher=0x7f02000b;
+        public static final int gps_s_any=0x7f020005;
+        public static final int gps_unknown=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
     }
     public static final class id {
         public static final int bitmap=0x7f0a0016;
